@@ -13,8 +13,8 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 
 //ROUTER
-require('./app/data/routing/apiRoutes.js')(app); 
-require('./app/data/routing/htmlRoutes.js')(app);
+require('./app/routing/apiroutes.js')(app); 
+require('./app/routing/htmlroutes.js')(app);
 
 // Starts the server to begin listening
 app.listen(PORT, function () {
